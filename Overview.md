@@ -99,6 +99,5 @@ Node,   PC1,                Degree,     influence_score
 566,    15.977418424706109, 924,        4.539252111152948
 
 Influence score model used take into account influence due to direct connections and indirect connections due to connections of your neighbors. 
-What this model fails to take into account when measuring influence is how well connected. 
 
-Another interesting method to classify identical nodes is discussed in the attached research paper (ART_MODEL), wherein a generative probabilistic model called Author-Recepient-Topic model is used to classify nodes as belonging to same class or not based on the people they converse with (recepients) and how they converse with these recepients (i.e the context the emails they send).
+Another interesting method to classify identical nodes is discussed in the attached research paper (ART_MODEL), wherein a generative probabilistic model called Author-Recepient-Topic model is used to classify nodes as belonging to same class or based on the people they converse with (recepients) and how they converse with these recepients (i.e the context the emails they send).
