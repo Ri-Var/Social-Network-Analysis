@@ -82,9 +82,8 @@ The feature vector for a node is the 20 neighbor nodes with highest degrees. Usi
 Influence Scoring for a node:
 influence = alpha * degree + (1-alpha) * PCA1
 
-degree - directly factors on the influence of a node
-
-PCA1 captures the percentage of variation captured on the axis in the local structure (NDS) - it is a measure of how highly connected the neighboring nodes of a node is and hence, playing a role in the influence a node holds.
+degree - factors into account the direct influence of a node due to the amount of neighbors it has.
+PCA1 - a measure of how highly connected the neighboring nodes of a node are i.e the quality of a node's neighbors in the context of influence and therefore is a factor that needs to be taken into account.
 
 The top 10 nodes with most influence are:
 Node,   PC1,                Degree,     influence_score
@@ -98,6 +97,6 @@ Node,   PC1,                Degree,     influence_score
 1139,   15.62554621684311,  1068,       4.5462487738122235
 566,    15.977418424706109, 924,        4.539252111152948
 
-Influence score model used take into account influence due to direct connections and indirect connections due to connections of your neighbors. 
+The influence score model used, takes into account influence due to direct connections and indirect connections due to connections of the neighbors. 
 
 Another interesting method to classify identical nodes is discussed in the attached research paper (ART_MODEL), wherein a generative probabilistic model called Author-Recepient-Topic model is used to classify nodes as belonging to same class or based on the people they converse with (recepients) and how they converse with these recepients (i.e the context the emails they send).
